@@ -50,5 +50,19 @@ return {
     dependencies = "nvim-treesitter/nvim-treesitter",
     cmd = "Neogen",
     config = true,
-  }
+  },
+
+  -- Refactoring library for { TypeScript, JavaScript, Lua, C/C++, Golang, Python, Java, PHP, Ruby }(25.01.2024)
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+---@diagnostic disable-next-line: missing-parameter
+      require("refactoring").setup()
+    end,
+    ft = {"lua", "ts", "js", "c", "cpp", "h", "hpp", "go", "py", "java", "php", "ruby"},
+  },
 }
