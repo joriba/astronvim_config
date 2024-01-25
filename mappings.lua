@@ -35,6 +35,12 @@ return {
 
     -- System clipboard interaction
     ["<leader>s"] = { "\"+", desc = "System clipboard" },
+
+    -- Show TODOs (and similar)
+    ["<leader>ft"] = { "<cmd>TodoTelescope<cr>", desc = "Find TODOs" },
+
+    -- Remap "Show Themes" to <leader>fT (capital T)
+    ["<leader>fT"] = { function() require("telescope.builtin").colorscheme { enable_preview = true } end, desc = "Find themes" } ,
   },
   t = {
     -- setting a mapping to false will disable it

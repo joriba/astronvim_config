@@ -7,7 +7,8 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- { import = "astrocommunity.editing-support.auto-save-nvim" },
-  -- { import = "astrocommunity.editing-support.dial-nvi::m" },
+  -- { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- { import = "astrocommunity.utility.noice-nvim" },
 }
