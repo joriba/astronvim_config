@@ -9,5 +9,6 @@ return {
   { import = "astrocommunity.editing-support.auto-save-nvim" },
   -- { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.color.ccc-nvim" },
   -- { import = "astrocommunity.utility.noice-nvim" },
 }
