@@ -65,4 +65,14 @@ return {
     end,
     ft = {"lua", "ts", "js", "c", "cpp", "h", "hpp", "go", "py", "java", "php", "ruby"},
   },
+
+  -- TODO comment highlighting
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+    opts = {
+      signs = false,
+    }
+  }
 }
