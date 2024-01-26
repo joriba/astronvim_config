@@ -34,13 +34,20 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- System clipboard interaction
-    ["<leader>s"] = { "\"+", desc = "System clipboard" },
+    ["<leader>s"] = { '"+', desc = "System clipboard" },
 
     -- Show TODOs (and similar)
     ["<leader>ft"] = { "<cmd>TodoTelescope<cr>", desc = "Find TODOs" },
 
     -- Remap "Show Themes" to <leader>fT (capital T)
-    ["<leader>fT"] = { function() require("telescope.builtin").colorscheme { enable_preview = true } end, desc = "Find themes" } ,
+    ["<leader>fT"] = {
+      function() require("telescope.builtin").colorscheme { enable_preview = true } end,
+      desc = "Find themes",
+    },
+
+    -- Jump to previous and next TODO
+    ["[t"] = { function() require("todo-comments").jump_next() end, desc = "Next TODO comment" },
+    ["]t"] = { function() require("todo-comments").jump_prev() end, desc = "Previous TODO comment" },
   },
   t = {
     -- setting a mapping to false will disable it
@@ -48,6 +55,6 @@ return {
   },
   v = {
     -- System clipboard interaction
-    ["<leader>s"] = { "\"+", desc = "System clipboard" },
-  }
+    ["<leader>s"] = { '"+', desc = "System clipboard" },
+  },
 }
