@@ -7,6 +7,13 @@ return {
       "c",
       "cpp",
       "rust",
+      "scala",
+      "python",
+      "java",
+      "markdown",
+      "html",
+      "css",
+      "javascript",
     })
   end,
 }
