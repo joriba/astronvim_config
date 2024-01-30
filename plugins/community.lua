@@ -12,4 +12,5 @@ return {
   { import = "astrocommunity.color.ccc-nvim" },
   -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   -- { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
 }
